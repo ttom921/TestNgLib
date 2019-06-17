@@ -1,10 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, InjectionToken, ModuleWithProviders } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { HsLibComponent } from './hs-lib.component';
+import { HsbuttonComponent } from './hsbutton/hsbutton.component';
+import { DataService } from './data.service';
+
+
+
 
 @NgModule({
-  declarations: [HsLibComponent],
+  declarations: [HsLibComponent, HsbuttonComponent],
   imports: [
+    HttpClientModule
   ],
-  exports: [HsLibComponent]
+  exports: [HsLibComponent, HsbuttonComponent]
 })
-export class HsLibModule { }
+export class HsLibModule {
+}
