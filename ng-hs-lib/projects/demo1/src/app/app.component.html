@@ -1,4 +1,8 @@
 <hs-hs-lib></hs-hs-lib>
 <hr>
 <hs-hsbutton></hs-hsbutton>
+<hr>
+<ul>
+  <li *ngFor="let item of todos"> userid:{{item.userId}} {{item.title}} </li>
+</ul>
 <router-outlet></router-outlet>

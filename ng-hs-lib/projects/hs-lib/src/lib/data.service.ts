@@ -7,9 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  dataUrl:string= "";
+  dataUrl: string = ""; //資料的位置
   // inject our configuration into our service
   constructor(private http: HttpClient) { }
+  // 設定資料的屬性
   setDataUrl(strurl: string) {
     this.dataUrl = strurl
   }
